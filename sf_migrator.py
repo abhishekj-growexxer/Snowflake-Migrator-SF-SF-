@@ -68,6 +68,7 @@ for database in databases:
 
     # cursor.execute(f"CREATE DATABASE {database};")
 
+    schema = source_schema
     
     # Read all tables from SOURCE    
     query = f"SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE table_schema = '{schema}'"
